@@ -8,6 +8,7 @@ import BootstrapPage from '../pages/BootstrapPage'
 import PropsPage from '../pages/PropsPage'
 import CounterPage from '../pages/CounterPage'
 import UseEffectPage from '../pages/UseEffectPage'
+import UseRef1Page from '../pages/UseRef1Page'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -60,6 +61,11 @@ const routes = [
     path: '/useffect',
     element: <UseEffectPage />,
     title: 'useEffect 연습 페이지',
+  },
+  {
+    path: '/useref',
+    element: <UseRef1Page />,
+    title: 'useRef1 연습 페이지',
   },
 ]
 
