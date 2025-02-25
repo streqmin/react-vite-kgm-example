@@ -6,6 +6,7 @@ import JSXPage from '../pages/JSXPage'
 import ConditionalPage from '../pages/ConditionalPage'
 import BootstrapPage from '../pages/BootstrapPage'
 import PropsPage from '../pages/PropsPage'
+import CounterPage from '../pages/CounterPage'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -48,6 +49,11 @@ const routes = [
     path: '/props',
     element: <PropsPage />,
     title: '프롭스 페이지',
+  },
+  {
+    path: '/usestate',
+    element: <CounterPage />,
+    title: 'useState 연습 페이지',
   },
 ]
 
