@@ -10,6 +10,8 @@ import CounterPage from '../pages/CounterPage'
 import UseEffectPage from '../pages/UseEffectPage'
 import UseRef1Page from '../pages/UseRef1Page'
 import UseRef2Page from '../pages/UseRef2Page'
+import AxiosPage from '../pages/AxiosPage'
+import AxiosClientPage from '../pages/AxiosClientPage'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -72,6 +74,16 @@ const routes = [
     path: '/useref2',
     element: <UseRef2Page />,
     title: 'useRef2 연습 페이지',
+  },
+  {
+    path: '/axios',
+    element: <AxiosPage />,
+    title: 'axios-get',
+  },
+  {
+    path: '/axiosclient',
+    element: <AxiosClientPage />,
+    title: 'axios-client',
   },
 ]
 
