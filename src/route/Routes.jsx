@@ -9,6 +9,7 @@ import PropsPage from '../pages/PropsPage'
 import CounterPage from '../pages/CounterPage'
 import UseEffectPage from '../pages/UseEffectPage'
 import UseRef1Page from '../pages/UseRef1Page'
+import UseRef2Page from '../pages/UseRef2Page'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -66,6 +67,11 @@ const routes = [
     path: '/useref',
     element: <UseRef1Page />,
     title: 'useRef1 연습 페이지',
+  },
+  {
+    path: '/useref2',
+    element: <UseRef2Page />,
+    title: 'useRef2 연습 페이지',
   },
 ]
 
