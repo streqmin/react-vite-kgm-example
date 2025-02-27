@@ -15,6 +15,9 @@ import AxiosClientPage from '../pages/AxiosClientPage'
 import InputPage from '../pages/InputPage'
 import GradeInputPage from '../pages/GradeInputPage'
 import GradeInputPage2 from '../pages/GradeInputPage2'
+import InlineStylePage from '../pages/cssPage/InlineStylePage'
+import ClassnameUsePage from '../pages/cssPage/ClassnameUsePage'
+import StyledComponentPage from '../pages/cssPage/StyledComponentPage'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -102,6 +105,21 @@ const routes = [
     path: '/grade2',
     element: <GradeInputPage2 />,
     title: '성적표 입력 페이지(다중입력)',
+  },
+  {
+    path: '/styled-css',
+    element: <InlineStylePage />,
+    title: '인라인 스타일',
+  },
+  {
+    path: '/classname-css',
+    element: <ClassnameUsePage />,
+    title: 'classname 스타일',
+  },
+  {
+    path: '/styledcomponent-css',
+    element: <StyledComponentPage />,
+    title: 'styled component',
   },
 ]
 
