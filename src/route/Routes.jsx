@@ -14,6 +14,7 @@ import AxiosPage from '../pages/AxiosPage'
 import AxiosClientPage from '../pages/AxiosClientPage'
 import InputPage from '../pages/InputPage'
 import GradeInputPage from '../pages/GradeInputPage'
+import GradeInputPage2 from '../pages/GradeInputPage2'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -96,6 +97,11 @@ const routes = [
     path: '/grade',
     element: <GradeInputPage />,
     title: '성적표 입력 페이지',
+  },
+  {
+    path: '/grade2',
+    element: <GradeInputPage2 />,
+    title: '성적표 입력 페이지(다중입력)',
   },
 ]
 
