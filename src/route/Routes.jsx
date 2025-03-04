@@ -18,6 +18,10 @@ import GradeInputPage2 from '../pages/GradeInputPage2'
 import InlineStylePage from '../pages/cssPage/InlineStylePage'
 import ClassnameUsePage from '../pages/cssPage/ClassnameUsePage'
 import StyledComponentPage from '../pages/cssPage/StyledComponentPage'
+import ContextNotUsePage from '../pages/ContextNotUsePage'
+import ContextUsedPage from '../pages/ContextUsedPage'
+import CounterContextPage from '../pages/CounterContextPage'
+import { CounterProvider } from '../contexts/CounterCOntext'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -120,6 +124,27 @@ const routes = [
     path: '/styledcomponent-css',
     element: <StyledComponentPage />,
     title: 'styled component',
+  },
+  {
+    path: '/nocontext',
+    element: <ContextNotUsePage />,
+    title: '컨텍스트API-사용안함',
+  },
+  {
+    path: '/contextused',
+    element: <ContextUsedPage />,
+    title: '컨텍스트API-사용',
+  },
+  {
+    path: '/countercontext',
+    element: (
+      <CounterProvider>
+        <div>머릿말</div>
+        <CounterContextPage />
+        <div>꼬릿말</div>
+      </CounterProvider>
+    ),
+    title: 'counter context',
   },
 ]
 
